@@ -50,7 +50,7 @@ combines relative-time slots during content-based retrieval:
 
 $$
 \boldsymbol o_t=(\mathbf R\mathbf V_t)^\top
-\mathrm{softmax}\!\left(\mathbf R\mathbf K_t\boldsymbol q_t\right).
+\mathrm{softmax}\left(\mathbf R\mathbf K_t\boldsymbol q_t\right).
 $$
 
 ### Absolute-clock recurrence
@@ -83,17 +83,17 @@ passes connected by a token-wise softmax readout:
 $$
 \begin{aligned}
 \{\boldsymbol o'_t\}_{t=1}^{T}
-&=\mathrm{ScalarGatedLA}\!\left(
+&=\mathrm{ScalarGatedLA}\left(
 \{\boldsymbol q_t,\boldsymbol k_t,
 \beta_t\mathcal U(-\lambda_t)\boldsymbol b,\alpha_t\}_{t=1}^{T}
 \right),\\
 \boldsymbol o''_t
 &=\mathcal U(-\lambda_t)\boldsymbol\Phi^\top\mathbf R^\top
-\mathrm{softmax}\!\left(
+\mathrm{softmax}\left(
 \mathbf R\boldsymbol\Phi\mathcal U(\lambda_t)\boldsymbol o'_t
 \right),\\
 \{\boldsymbol o_t\}_{t=1}^{T}
-&=\mathrm{ScalarGatedLA}\!\left(
+&=\mathrm{ScalarGatedLA}\left(
 \{\boldsymbol o''_t,
 \beta_t\mathcal U(-\lambda_t)\boldsymbol b,
 \boldsymbol v_t,\alpha_t\}_{t=1}^{T}
