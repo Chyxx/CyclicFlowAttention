@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyclic-flow-attention"
+version = "0.1.0"
+description = "Training and inference implementation of CyclicFlowAttention"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = [
+    "LICENSE",
+    "training/LICENSE",
+    "eval/vendor/lm_eval_prefix/LICENSE.md",
+]
+authors = [
+    {name = "Yixiao Chen"},
+    {name = "Shuojin Yang"},
+    {name = "Shi-Min Hu"},
+]
+dependencies = [
+    "torch>=2.8,<3",
+    "triton>=3.4,<4",
+    "transformers==5.14.1",
+    "einops>=0.8,<0.9",
+    "numpy>=1.26,<3",
+    "protobuf>=4.25,<8",
+    "sentencepiece>=0.2,<0.3",
+    "flash-linear-attention",
+]
+
+[project.urls]
+Repository = "https://github.com/Chyxx/CyclicFlowAttention"
+Issues = "https://github.com/Chyxx/CyclicFlowAttention/issues"
+
+[project.optional-dependencies]
+train = ["accelerate==1.13.0", "datasets==4.0.0"]
+eval = ["accelerate==1.13.0", "datasets==4.0.0", "lm-eval[hf]==0.4.12"]
+
+[tool.setuptools.packages.find]
+include = ["cyclic_flow_attention*", "training*", "eval*"]
+namespaces = true
+exclude = ["*.__pycache__*"]
+
+[tool.setuptools.package-data]
+eval = ["vendor/lm_eval_prefix/**/*.py", "vendor/lm_eval_prefix/**/*.yaml", "vendor/lm_eval_prefix/*.md"]
