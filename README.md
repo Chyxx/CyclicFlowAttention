@@ -50,7 +50,7 @@ combines relative-time slots during content-based retrieval:
 
 $$
 \boldsymbol o_t=(\mathbf R\mathbf V_t)^\top
-\operatorname{softmax}\!\left(\mathbf R\mathbf K_t\boldsymbol q_t\right).
+\mathrm{softmax}\!\left(\mathbf R\mathbf K_t\boldsymbol q_t\right).
 $$
 
 ### Absolute-clock recurrence
@@ -83,17 +83,17 @@ passes connected by a token-wise softmax readout:
 $$
 \begin{aligned}
 \{\boldsymbol o'_t\}_{t=1}^{T}
-&=\operatorname{ScalarGatedLA}\!\left(
+&=\mathrm{ScalarGatedLA}\!\left(
 \{\boldsymbol q_t,\boldsymbol k_t,
 \beta_t\mathcal U(-\lambda_t)\boldsymbol b,\alpha_t\}_{t=1}^{T}
 \right),\\
 \boldsymbol o''_t
 &=\mathcal U(-\lambda_t)\boldsymbol\Phi^\top\mathbf R^\top
-\operatorname{softmax}\!\left(
+\mathrm{softmax}\!\left(
 \mathbf R\boldsymbol\Phi\mathcal U(\lambda_t)\boldsymbol o'_t
 \right),\\
 \{\boldsymbol o_t\}_{t=1}^{T}
-&=\operatorname{ScalarGatedLA}\!\left(
+&=\mathrm{ScalarGatedLA}\!\left(
 \{\boldsymbol o''_t,
 \beta_t\mathcal U(-\lambda_t)\boldsymbol b,
 \boldsymbol v_t,\alpha_t\}_{t=1}^{T}
@@ -121,11 +121,11 @@ SWDE, SQuAD, NQ, TriviaQA, and DROP. All scores are percentages.
 | 800M | Transformer | 45.61 | 38.23 | 49.32 | 42.92 |
 | 800M | KDA | 46.81 | 31.18 | 28.25 | 30.18 |
 | 800M | CyFA | 48.16 | 37.13 | 43.69 | 40.58 |
-| 1.4B | Transformer$^\dagger$ | 49.85 | 41.41 | 55.31 | 44.70 |
+| 1.4B | Transformer<sup>†</sup> | 49.85 | 41.41 | 55.31 | 44.70 |
 | 1.4B | KDA | 52.89 | 37.73 | 42.60 | 40.77 |
 | 1.4B | CyFA | 53.19 | 43.47 | 57.77 | 46.58 |
 
-$^\dagger$ Publicly released [FLA Transformer checkpoint](https://huggingface.co/fla-hub/transformer-1.3B-100B).
+<sup>†</sup> Publicly released [FLA Transformer checkpoint](https://huggingface.co/fla-hub/transformer-1.3B-100B).
 
 | Model | Config | Layers | Hidden size | Heads | Head dimension | SlimPajama tokens | Checkpoint |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
