@@ -352,10 +352,13 @@ We thank their authors for making their code publicly available.
 ## Citation
 
 ```bibtex
-@article{chen2026cyfa,
+@misc{chen2026cyfalinearsequencemodeling,
   title={CyFA: Linear Sequence Modeling with Relative-Time-Partitioned Memory},
-  author={Chen, Yixiao and Yang, Shuojin and Hu, Shi-Min},
-  journal={arXiv preprint arXiv:ARXIV_ID},
-  year={2026}
+  author={Yixiao Chen and Shuojin Yang and Shi-Min Hu},
+  year={2026},
+  eprint={2609.36259},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2609.36259},
 }
 ```
