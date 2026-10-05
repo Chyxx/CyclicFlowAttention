@@ -5,11 +5,7 @@
 **[Yixiao Chen](https://chyxx.github.io/) · Shuojin Yang · Shi-Min Hu**  
 Tsinghua University
 
-[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b)](https://arxiv.org/abs/2609.36259)
-[![Models](https://img.shields.io/badge/Hugging_Face-Checkpoints-ffd21e)](https://huggingface.co/collections/cyxxxxxxxxxx/cyclicflowattention-6abb56dc723179dddead18b0)
-
-[![Blog (English)](https://img.shields.io/badge/Blog-English-2a78d6)](https://chyxx.github.io/cyfa-blog/posts/cyfa/)
-[![博客（中文）](https://img.shields.io/badge/博客-中文-d3202a)](https://chyxx.github.io/cyfa-blog/zh/posts/cyfa/)
+[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b)](https://arxiv.org/abs/2609.36259) [![Models](https://img.shields.io/badge/Hugging_Face-Checkpoints-ffd21e)](https://huggingface.co/collections/cyxxxxxxxxxx/cyclicflowattention-6abb56dc723179dddead18b0) [![Blog](https://img.shields.io/badge/Blog-2a78d6)](https://chyxx.github.io/cyfa-blog/posts/cyfa/)
 
 </div>
 
