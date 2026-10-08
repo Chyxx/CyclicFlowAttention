@@ -5,9 +5,11 @@
 **[Yixiao Chen](https://chyxx.github.io/) · Shuojin Yang · Shi-Min Hu**  
 Tsinghua University
 
-[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b)](https://arxiv.org/abs/2609.36259) [![Models](https://img.shields.io/badge/Hugging_Face-Checkpoints-ffd21e)](https://huggingface.co/collections/cyxxxxxxxxxx/cyclicflowattention-6abb56dc723179dddead18b0) [![Blog](https://img.shields.io/badge/Blog-2a78d6)](https://chyxx.github.io/cyfa-blog/posts/cyfa/)
+[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b)](https://arxiv.org/abs/2609.36259) [![Models](https://img.shields.io/badge/Hugging_Face-Checkpoints-ffd21e)](https://huggingface.co/collections/cyxxxxxxxxxx/cyclicflowattention-6abb56dc723179dddead18b0) [![Zhihu](https://img.shields.io/badge/Zhihu-Intro-blue?logo=zhihu)](https://zhuanlan.zhihu.com/p/2090817772250984628)
 
 </div>
+
+CyFA has been integrated into [flash-linear-attention](https://github.com/fla-org/flash-linear-attention), making it easier to use for training and inference.
 
 Official PyTorch implementation of **Cyclic Flow Attention (CyFA)**. CyFA organizes
 a fixed-size recurrent memory by relative time, combining a learned clock and
