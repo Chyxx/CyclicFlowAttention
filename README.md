@@ -9,7 +9,11 @@ Tsinghua University
 
 </div>
 
+---
+
 CyFA has been integrated into [flash-linear-attention](https://github.com/fla-org/flash-linear-attention), making it easier to use for training and inference.
+
+---
 
 Official PyTorch implementation of **Cyclic Flow Attention (CyFA)**. CyFA organizes
 a fixed-size recurrent memory by relative time, combining a learned clock and
